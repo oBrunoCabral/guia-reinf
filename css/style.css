@@ -1,0 +1,36 @@
+#main-wrapper{
+    /* background-color: black; */
+    height: 100px;
+    scroll-behavior: smooth;
+}
+#side-wrapper{
+    border-right: black 1px solid;
+    position:fixed;
+    height: 90%;
+    overflow: auto;
+    
+}
+
+#side-wrapper a{
+    font-size: 0.9em;
+}
+
+.titulo-side-wrapper{
+    color: darkgrey;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.subtitulo-side-wrapper{
+    color: darkgrey;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+h6{
+    font-weight: bolder;
+}
+
+h6, b{
+    color: darkgray;
+}
