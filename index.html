@@ -12,7 +12,7 @@
   <header>
       <div class="navbar-fixed">
         <nav>
-          <div class="nav-wrapper blue-grey darken-1">
+          <div class="nav-wrapper">
             <a href="/" class="brand-logo center">Mini-Guia REINF</a>
           </div>
         </nav>
@@ -55,15 +55,33 @@
           <li><a href="#R-9000">> R-9000 – Exclusão de Evento</a></li>
         </ul>
         <hr>
-        <p class="titulo-side-wrapper">REINF no NG ERP</p>
+        <p class="titulo-side-wrapper"> <a href="#ReinfNG">REINF no NG ERP</a></p>
         <ul>
           <li><a href="#CadEmpresa">> Cadastro da Empresa</a></li>
           <li><a href="#CadCliente">> Cadastro de Cliente / Fornecedor</a></li>
           <li><a href="#CadServicos">> Cadastro de Serviços</a></li>
           <li><a href="#RPS">> Lançamento de RPS / NFSE</a></li>
-          <li><a href="#ProcREINF">> Menu Processos REINF</a></li>
+          <li><a href="#ProcREINF" class="titulo-side-wrapper">> Menu Processos REINF</a></li>
+          <li><a href="#PreProc"> >> Pré-Processamento de Eventos R2010/R2020</a></li>
+          <li><a href="#RecAssocDesp"> >> Recursos Recebidos por Associação Desportiva</a></li> 
+          <li><a href="#ComProdRural"> >> Comercialização da produção por Produtor Rural PJ/Agroindústria</a></li> 
+          <li><a href="#EFDREINF"> >> Gerar Eventos - EFD REINF</a></li>
         </ul>
         <hr>
+        <p class="titulo-side-wrapper"> <a href="#ReinfADM">REINF no Master ADM</a></p>
+        <ul>
+          <li><a href="#CadEmpresaADM">> Cadastro da Empresa</a></li>
+          <li><a href="#CadProcADM">> Cadastro de Processos Administrativos/Judiciais</a></li>
+          <li><a href="#CadClienteADM">> Cadastro de Cliente / Fornecedor</a></li>
+          <li><a href="#CadServicosADM">> Cadastro de Serviços</a></li>
+          <li><a href="#RPSADM">> Lançamento de RPS / NFSE</a></li>
+          <li><a href="#ProcREINFADM" class="titulo-side-wrapper">> Menu Processos > REINF</a></li>
+          <li><a href="#ComProdRuralADM"> >> Comercialização da produção por Produtor Rural PJ/Agroindústria</a></li>
+          <li><a href="#CPRBADM"> >> Contribuição Previdenciária sobre Receita Bruta - CPRB</a></li>
+          <li><a href="#RecAssocDespADM"> >> Recursos Recebidos/Repassados por Associação Desportiva</a></li>  
+          <li><a href="#PreProcADM"> >> Pré-Processamento de Eventos R2010/R2020</a></li>
+          <li><a href="#EFDREINFADM"> >> Gerar Eventos - EFD REINF</a></li>
+        </ul>
       </div>
 
       <div id="main-wrapper" class="col s8 push-s2">
@@ -220,94 +238,341 @@
               periódicos (R-2010 a R-2070). 
               </p>
           <hr>
-          <h5>REINF no NG ERP</h5>
+          <h5 id='ReinfNG'>REINF no NG ERP</h5>
           <p>O ERP NG dispõe dos parâmetros necessários para a geração e envio dos arquivos pertinentes ao REINF.<br>A seguir, algumas orientações sobre como parametrizar o sistema:</p>
           
-          <h6 id='CadEmpresa'>Cadastro de Empresa</h6>          
-            <div class="row">
+          <h6 id='CadEmpresa'>Cadastro de Empresa - R1000</h6>          
+          <div class="row">
+            <div class="col s12">
+              <div class="card">
+                <div class="card-image">
+                  <img src="img/ng/cadEmpresa.JPG">
+                </div>
+                <div class="card-content">
+                  <p>
+                    Após acessar o menu de cadastro de empresas no NG e selecioná-la, navegue até a aba 
+                    <b>Parâmetros REINF</b> e preencha com as informações passadas por sua contabilidade.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <br>
+            <p><i>Em alguns casos pode ser necessário informar possíveis processos Administrativos/Judiciais que influenciam no cumprimento das obrigações tributárias
+                principais e acessórias. Estes processos são informados em <b>Cadastros > Empresas > Processos Administrativos/Judiciais</b>:</i></p>
               <div class="col s12">
                 <div class="card">
                   <div class="card-image">
-                    <img src="img/cadEmpresa.JPG">
+                    <img src="img/ng/cadEmpresa2.JPG">
                   </div>
                   <div class="card-content">
                     <p>
-                      Após acessar o menu de cadastro de empresas no NG e selecioná-la, navegue até a aba 
-                      <b>Parâmetros REINF</b> e preencha com as informações passadas por sua contabilidade.
+                      As informações relacionadas a processos Administrativos/Judiciais são enviadas no registro R1070.
+                      <br>Nesta aba é possível associar o processo a fornecedores/clientes, serviços/mercadorias e informar quais tributos são afetados por ele.
                     </p>
                   </div>
                 </div>
               </div>
-              <br>
-              <p><i>Em alguns casos pode ser necessário informar possíveis processos Administrativos/Judiciais que influenciam no cumprimento das obrigações tributárias
-                  principais e acessórias. Estes processos são informados em <b>Cadastros > Empresas > Processos Administrativos/Judiciais</b>:</i></p>
-                <div class="col s12">
-                  <div class="card">
-                    <div class="card-image">
-                      <img src="img/cadEmpresa2.JPG">
-                    </div>
-                    <div class="card-content">
-                      <p>
-                        As informações relacionadas a processos Administrativos/Judiciais são enviadas no registro R1070.
-                        <br>Nesta aba é possível associar o processo a fornecedores/clientes, serviços/mercadorias e informar quais tributos são afetados por ele.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-            </div>
+          </div>
 
-            <h6 id='CadCliente'>Cadastro de Cliente/Fornecedor</h6>          
-            <div class="row">
-              <div class="col s12">
-                <div class="card">
-                  <div class="card-image">
-                    <img src="img/cadCliFor.JPG">
-                  </div>
-                  <div class="card-content">
-                    <p>
-                      Após acessar o menu de cadastro de Clientes e Fornecedores no NG e selecione-o e navegue até a aba 
-                      <b>Parâmetros REINF</b>. Preencha esta aba com as informações passadas por sua contabilidade.
-                    </p>
-                  </div>
+          <h6 id='CadCliente'>Cadastro de Cliente/Fornecedor</h6>          
+          <div class="row">
+            <div class="col s12">
+              <div class="card">
+                <div class="card-image">
+                  <img src="img/ng/cadCliFor.JPG">
+                </div>
+                <div class="card-content">
+                  <p>
+                    Após acessar o menu de cadastro de Clientes e Fornecedores no NG e selecione-o e navegue até a aba 
+                    <b>Parâmetros REINF</b>. Preencha esta aba com as informações passadas pelo próprio cliente ou pela consultoria contábil deste.
+                  </p>
                 </div>
               </div>
             </div>
+          </div>
 
-            <h6 id='CadServicos'>Cadastro de Serviços</h6>          
-            <div class="row">
-              <div class="col s12">
-                <div class="card">
-                  <div class="card-image">
-                    <img src="img/cadServico.JPG">
-                  </div>
-                  <div class="card-content">
-                    <p>
-                      Ao acessar o menu de cadastro de Serviços, selecione o serviço desejado e navegue até a aba 
-                      <b>Parâmetros REINF</b>. Preencha esta aba com as informações passadas por sua contabilidade.
-                    </p>
-                  </div>
+          <h6 id='CadServicos'>Cadastro de Serviços</h6>          
+          <div class="row">
+            <div class="col s12">
+              <div class="card">
+                <div class="card-image">
+                  <img src="img/ng/cadServico.JPG">
+                </div>
+                <div class="card-content">
+                  <p>
+                    Ao acessar o menu de cadastro de Serviços, selecione o serviço desejado e navegue até a aba 
+                    <b>Parâmetros REINF</b>. Esta aba deve ser preenchida de acordo com o informado pela contabilidade.
+                  </p>
                 </div>
               </div>
             </div>
+          </div>
 
-            <h6 id='RPS'>Lançamento de RPS / NFSE</h6>          
-            <div class="row">
-              <div class="col s12">
-                <div class="card">
-                  <div class="card-image">
-                    <img src="img/lancRPS.JPG">
-                  </div>
-                  <div class="card-content">
-                    <p>
-                      Ao realizar o lançamento de uma RPS que venha a se tornar NFSe ou mesmo uma NFSe recebida por prestador de serviço,
-                      em que foram prestados/tomados serviços sujeitos ao destacamento no REINF, deve-se atentar à aba <b>Dados REINF</b>.
-                      <br>Caso o serviço já tenha sido parametrizado, esta aba deverá aparecer preenchida. Porém é possível parametrizar o serviço diretamente nesta tela também.
-                    </p>
-                  </div>
+          <h6 id='RPS'>Lançamento de RPS / NFSE</h6>          
+          <div class="row">
+            <div class="col s12">
+              <div class="card">
+                <div class="card-image">
+                  <img src="img/ng/lancRPS.JPG">
+                </div>
+                <div class="card-content">
+                  <p>
+                    Ao realizar o lançamento de uma RPS que venha a se tornar NFSe ou mesmo uma NFSe recebida por prestador de serviço,
+                    em que foram prestados/tomados serviços sujeitos ao destacamento no REINF, deve-se atentar à aba <b>Dados REINF</b>.
+                    <br>Caso o serviço já tenha sido parametrizado, esta aba deverá aparecer preenchida. Porém é possível parametrizar o serviço diretamente nesta tela também.
+                  </p>
                 </div>
               </div>
             </div>
-              
+          </div>
+
+          <h5 id='ProcREINF'>Menu Processos REINF</h5>    
+          <br>  
+          <h6 id='PreProc'>Pré-Processamento de Eventos R2010/R2020</h6>          
+          <div class="row">
+            <div class="col s12">
+              <div class="card">
+                <div class="card-image">
+                  <img src="img/ng/preProcEventos.JPG">
+                </div>
+                <div class="card-content">
+                  <p>
+                    A rotina de Pré Processamento Eventos R2010/R2020 tem como objetivo carregar as notas fiscais sujeitas a serem informadas nestes eventos, 
+                    com o objetivo de tratar que qualquer crítica ou informação incorreta que possa ter sido inserida nestas.<br>
+                    Nesta tela o botão <b>Crítica</b> exibe um log com possíveis problemas a serem corrigidos nas notas selecionadas e o botão <b>Processar</b> torna 
+                    as notas aptas para a <a href="#EFDREINF">Geração dos Eventos</a> após as devidas correções das críticas.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h6 id='RecAssocDesp'>Recursos Recebidos por Associação Desportiva - R2040</h6>          
+          <div class="row">
+            <div class="col s12">
+              <div class="card">
+                <div class="card-image">
+                  <img src="img/ng/recAssocDesportiva.JPG">
+                </div>
+                <div class="card-content">
+                  <p>
+                    Nesta tela é possível acompanhar e realizar o lançamento de Recursos Recebidos e/ou Repassados por Associação Desportiva.<br>
+                    Após clicar em Incluir e preencher os dados da filial, origem e Ano/Mês Referência, devem ser informados na aba <b>Detalhamento dos recursos recebidos</b>
+                    dados como o Tipo e Discriminação do repasse, além do valor e valor de retenção.<br>
+                    Ainda é possível vincular processos jurídico-administrativos <a href="#CadEmpresa">previamente cadastrados</a>, através da aba <b>Processos Relacionados</b>. Após isso, pode-se salvar o lançamento e clicar em Gerar Recebimento/Pagamento para que seja gerado o lançamento financeiro.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h6 id='ComProdRural'><b>NGEstoque</b> - Comercialização da produção por Produtor Rural PJ/Agroindústria - R2050</h6>          
+          <div class="row">
+            <div class="col s12">
+              <div class="card">
+                <div class="card-image">
+                  <img src="img/ng/comProdRural.JPG">
+                </div>
+                <div class="card-content">
+                  <p>
+                    Esta rotina é destinada às empresas obrigadas a informar o registro R2050, referente à comercialização da produção por Produtor Rural e Agroindústria.
+                    <b>Lembrando que não cabe ao suporte informar ao cliente se ele é ou não obrigado a informar este registro. Essa informação deve ser dada pela contabilidade deste.</b>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h6 id='EFDREINF'>Gerar Eventos</h6>          
+          <div class="row">
+            <div class="col s12">
+              <div class="card">
+                <div class="card-image">
+                  <img src="img/ng/efdReinf.JPG">
+                </div>
+                <div class="card-content">
+                  <p>
+                    Aqui serão gerados os eventos do REINF para posterior sincronização com o <a href="MConnect">MasterConnect</a>.<br>
+                    Deve-se selecionar o período de geração e os Eventos a serem gerados. Após isso clicar em <b>Exibir Prévia</b> para carregar os eventos.
+                    As linhas exibidas riscadas em vermelho na prévia já foram enviados no período selecionado (ou simplesmente enviados, como no caso do R1000).<br>
+                    Após examinar a prévia, caso esteja tudo certo, basta clicar em <b>Enviar MasterConnect</b> para sincronizar os arquivos automaticamente com a plataforma ou <b>Exportar XML</b> para gerar os arquivos e importar manualmente em outro momento.<br>
+                    Selecionando a segunda opção, o sistema gerará os arquivos XML dos eventos e solicitará que o cliente informe o diretório para salvá-los.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <hr>
+
+          <h5 id='ReinfADM'>REINF na linha Master ADM</h5>
+          <p>O MasterGerencial e o MasterFaturamento também dispõe dos parâmetros necessários para a geração e envio dos arquivos pertinentes ao REINF.<br>
+            A seguir, algumas orientações sobre como parametrizar o sistema:
+          </p>
+
+          <h6 id='CadEmpresaADM'>Cadastro da Empresa</h6>          
+          <div class="row">
+            <div class="col s12">
+              <div class="card">
+                <div class="card-image">
+                  <img src="img/adm/mock.JPG">
+                </div>
+                <div class="card-content">
+                  <p>
+                    ........
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h6 id='CadProcADM'>Cadastro de Processos Administrativos/Judiciais</h6>          
+          <div class="row">
+            <div class="col s12">
+              <div class="card">
+                <div class="card-image">
+                  <img src="img/adm/mock.JPG">
+                </div>
+                <div class="card-content">
+                  <p>
+                    ........
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h6 id='CadClienteADM'>Cadastro de Cliente / Fornecedor</h6>          
+          <div class="row">
+            <div class="col s12">
+              <div class="card">
+                <div class="card-image">
+                  <img src="img/adm/mock.JPG">
+                </div>
+                <div class="card-content">
+                  <p>
+                    ........
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h6 id='CadServicosADM'>Cadastro de Serviços</h6>          
+          <div class="row">
+            <div class="col s12">
+              <div class="card">
+                <div class="card-image">
+                  <img src="img/adm/mock.JPG">
+                </div>
+                <div class="card-content">
+                  <p>
+                    ........
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h6 id='RPSADM'>Lançamento de RPS / NFSE</h6>          
+          <div class="row">
+            <div class="col s12">
+              <div class="card">
+                <div class="card-image">
+                  <img src="img/adm/mock.JPG">
+                </div>
+                <div class="card-content">
+                  <p>
+                    ........
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h5 id='ProcREINFADM'>Menu Processos > REINF</h5>          
+
+          <h6 id='ComProdRuralADM'>Comercialização da produção por Produtor Rural PJ/Agroindústria</h6>          
+          <div class="row">
+            <div class="col s12">
+              <div class="card">
+                <div class="card-image">
+                  <img src="img/adm/mock.JPG">
+                </div>
+                <div class="card-content">
+                  <p>
+                    ........
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h6 id='CPRBADM'>Contribuição Previdenciária sobre Receita Bruta - CPRB</h6>          
+          <div class="row">
+            <div class="col s12">
+              <div class="card">
+                <div class="card-image">
+                  <img src="img/adm/mock.JPG">
+                </div>
+                <div class="card-content">
+                  <p>
+                    ........
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h6 id='RecAssocDespADM'>Recursos Recebidos/Repassados por Associação Desportiva</h6>          
+          <div class="row">
+            <div class="col s12">
+              <div class="card">
+                <div class="card-image">
+                  <img src="img/adm/mock.JPG">
+                </div>
+                <div class="card-content">
+                  <p>
+                    ........
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h6 id='PreProcADM'>Pré-Processamento de Eventos R2010/R2020</h6>          
+          <div class="row">
+            <div class="col s12">
+              <div class="card">
+                <div class="card-image">
+                  <img src="img/adm/mock.JPG">
+                </div>
+                <div class="card-content">
+                  <p>
+                    ........
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h6 id='EFDREINFADM'>Gerar Eventos - EFD REINF</h6>          
+          <div class="row">
+            <div class="col s12">
+              <div class="card">
+                <div class="card-image">
+                  <img src="img/adm/mock.JPG">
+                </div>
+                <div class="card-content">
+                  <p>
+                    ........
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
         </div>
       </div>
     </div>
