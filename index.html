@@ -1,91 +1,131 @@
 <!DOCTYPE html>
 <html>
-	<meta charset="utf-8">
+	<meta charset="utf-8" name = "viewport" content = "width = device-width, initial-scale = 1">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
 <head>
 	<title>Mini Guia REINF</title>
 </head>
 <body>
+      <!-- Minified jQuery -->
+      <script type = "text/javascript" src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+
+ </script>
+
   <header>
-      <div class="navbar-fixed">
-        <nav>
-          <div class="nav-wrapper">
-            <a href="https://obrunocabral.github.io/guia-reinf/" class="brand-logo center">Mini-Guia REINF</a>
-          </div>
-        </nav>
-      </div>
+
   </header>
 
   <main>
     <div class="row">
       <div id="side-wrapper" class="blue-grey lighten-5 col s2">
-        <p class="titulo-side-wrapper">Sobre o REINF:</p>
-        <ul>
-          <li><a href="#Contrib">> Contribuintes obrigados a adotar a EFD-Reinf</a></li>
-          <li><a href="#Objs">> Objetivos da EFD-Reinf</a></li>
+          <div class="navbar" style = "width: 278px;">
+              <nav>
+                <div class="nav-wrapper">
+                  <a href="https://obrunocabral.github.io/guia-reinf/" class="brand-logo center" style="font-size: 1em;"><b>Mini-Guia REINF</b></a>
+                </div>
+              </nav>
+            </div>
+
+<!-- Começo Side Wrapper -->
+        <h5>Sobre o REINF</h5>
+        <ul class = "collapsible" data-collapsible = "accordion">
+           <li>
+              <div class = "collapsible-header"><a href="#Contrib">> Contribuintes obrigados a adotar a EFD-Reinf</a></div>
+              <div class = "collapsible-header"><a href="#Objs">> Objetivos da EFD-Reinf</a></div>
+           </li>
         </ul>
+
         <hr>
-        <p class="titulo-side-wrapper">Registros:</p>
-        <p class="subtitulo-side-wrapper">Abertura:</p>
-        <ul>
-          <li><a href="#R-1000">> R-1000 – Informações do Contribuinte</a></li>
-          <li><a href="#R-1070">> R-1070 - Tabela de Processos Administrativos/Judiciais</a></li>
+
+        <h5>Eventos</h5>        
+      <!-- Collapsible EVENTOS ABERTURA -->
+        <ul class = "collapsible" data-collapsible = "accordion">
+          <li>
+            <div class = "collapsible-header"><p>Abertura</p></div>
+            <div class = "collapsible-body"><a href="#R-1000">> R-1000 – Informações do Contribuinte</a></div>
+            <div class = "collapsible-body"><a href="#R-1070">> R-1070 - Tabela de Processos Administrativos/Judiciais</a></div>
+          </li>
         </ul>
+      <!-- Collapsible EVENTOS ABERTURA -->
         <hr>
-        <p class="subtitulo-side-wrapper">Periódicos:</p>
-        <ul>
-          <li><a href="#R-2010">> R-2010 - Retenções Contribuição Previdenciária– Tomadores de Serviços</a></li>
-          <li><a href="#R-2020">> R-2020 - Retenções – Prestadores de Serviços</a></li>
-          <li><a href="#R-2030">> R-2030 - Recursos Recebidos por Associação Desportiva</a></li>
-          <li><a href="#R-2040">> R-2040 - Retenções – Recursos Repassados para Associação Desportiva</a></li>
-          <li><a href="#R-2050">> R-2050 - Comercialização da Produção por Produtor Rural PJ/Agroindústria</a></li>
-          <li><a href="#R-2060">> R-2060 - Contribuição Previdenciária sobre a Receita Bruta – CPRB</a></li>
-          <li><a href="#R-2070">> R-2070 - Retenções – Pagamentos Diversos – DIRF</a></li>
-          <li><a href="#R-2098">> R-2098 - Reabertura dos Eventos Periódicos</a></li>
-          <li><a href="#R-2099">> R-2099 - Fechamento dos Eventos Periódicos</a></li>
+      <!-- Collapsible EVENTOS PERIÓDICOS -->
+        <ul class = "collapsible" data-collapsible = "accordion">
+          <li>
+            <div class="collapsible-header"><p>Periódicos</p></div>
+            <div class="collapsible-body"><a href="#R-2010">> R-2010 - Retenções Contribuição Previdenciária– Tomadores de Serviços</a></div>
+            <div class="collapsible-body"><a href="#R-2020">> R-2020 - Retenções – Prestadores de Serviços</a></div>
+            <div class="collapsible-body"><a href="#R-2030">> R-2030 - Recursos Recebidos por Associação Desportiva</a></div>
+            <div class="collapsible-body"><a href="#R-2040">> R-2040 - Retenções – Recursos Repassados para Associação Desportiva</a></div>
+            <div class="collapsible-body"><a href="#R-2050">> R-2050 - Comercialização da Produção por Produtor Rural PJ/Agroindústria</a></div>
+            <div class="collapsible-body"><a href="#R-2060">> R-2060 - Contribuição Previdenciária sobre a Receita Bruta – CPRB</a></div>
+            <div class="collapsible-body"><a href="#R-2070">> R-2070 - Retenções – Pagamentos Diversos – DIRF</a></div>
+            <div class="collapsible-body"><a href="#R-2098">> R-2098 - Reabertura dos Eventos Periódicos</a></div>
+            <div class="collapsible-body"><a href="#R-2099">> R-2099 - Fechamento dos Eventos Periódicos</a></div>
+          </li>
         </ul>
+      <!-- Collapsible EVENTOS PERIÓDICOS -->
         <hr>
-        <p class="subtitulo-side-wrapper">Não Periódicos:</p>
-        <ul>
-          <li><a href="#R-3010">> R-3010 - Receita de Espetáculos Desportivos</a></li>
-          <li><a href="#R-5001">> R-5001 - Informações das bases e dos tributos consolidados por contribuinte</a></li>
-          <li><a href="#R-9000">> R-9000 – Exclusão de Evento</a></li>
+      <!-- Collapsible EVENTOS NÃO PERIÓDICOS -->
+        <ul class = "collapsible" data-collapsible = "accordion">
+          <li>
+            <div class="collapsible-header"><p>Não Periódicos</p></div>
+            <div class="collapsible-body"><a href="#R-3010">> R-3010 - Receita de Espetáculos Desportivos</a></div>
+            <div class="collapsible-body"><a href="#R-5001">> R-5001 - Informações das bases e dos tributos consolidados por contribuinte</a></div>
+            <div class="collapsible-body"><a href="#R-9000">> R-9000 – Exclusão de Evento</a></div>
+          </li>
         </ul>
+      <!-- Collapsible EVENTOS NÃO PERIÓDICOS -->
         <hr>
-        <p class="titulo-side-wrapper"> <a href="#ReinfNG">REINF no NG ERP</a></p>
-        <ul>
-          <li><a href="#CadEmpresa">> Cadastro da Empresa</a></li>
-          <li><a href="#CadCliente">> Cadastro de Cliente / Fornecedor</a></li>
-          <li><a href="#CadServicos">> Cadastro de Serviços</a></li>
-          <li><a href="#RPS">> Lançamento de RPS / NFSE</a></li>
-          <li><a href="#ProcREINF" class="titulo-side-wrapper">> Menu Processos REINF</a></li>
-          <li><a href="#PreProc"> >> Pré-Processamento de Eventos R2010/R2020</a></li>
-          <li><a href="#RecAssocDesp"> >> Recursos Recebidos por Associação Desportiva</a></li> 
-          <li><a href="#ComProdRural"> >> Comercialização da produção por Produtor Rural PJ/Agroindústria</a></li> 
-          <li><a href="#EFDREINF"> >> Gerar Eventos - EFD REINF</a></li>
+
+        <h5>REINF Nos Sistemas</h5>
+      <!-- Collapsible REINF NO NG -->
+        <ul class = "collapsible" data-collapsible = "accordion">
+          <li>
+            <div class="collapsible-header"><a href="#ReinfNG"><p>REINF no NG</p></a></div>
+            <div class="collapsible-body"><a href="#CadEmpresa">> Cadastro da Empresa</a></div>
+            <div class="collapsible-body"><a href="#CadCliente">> Cadastro de Cliente / Fornecedor</a></div>
+            <div class="collapsible-body"><a href="#CadServicos">> Cadastro de Serviços</a></div>
+            <div class="collapsible-body"><a href="#RPS">> Lançamento de RPS / NFSE</a></div>
+            <div class="collapsible-body"><a href="#ProcREINF" class="titulo-side-wrapper">> Menu Processos REINF</a></div>
+            <div class="collapsible-body"><a href="#PreProc"> >> Pré-Processamento de Eventos R2010/R2020</a></div>
+            <div class="collapsible-body"><a href="#RecAssocDesp"> >> Recursos Recebidos por Associação Desportiva</a></div> 
+            <div class="collapsible-body"><a href="#ComProdRural"> >> Comercialização da produção por Produtor Rural PJ/Agroindústria</a></div> 
+            <div class="collapsible-body"><a href="#EFDREINF"> >> Gerar Eventos - EFD REINF</a></div>
+          </li>
         </ul>
+      <!-- Collapsible REINF NO NG -->
         <hr>
-        <p class="titulo-side-wrapper"> <a href="#ReinfADM">REINF no Master ADM</a></p>
-        <ul>
-          <li><a href="#CadEmpresaADM">> Cadastro da Empresa</a></li>
-          <li><a href="#CadProcADM">> Cadastro de Processos Administrativos/Judiciais</a></li>
-          <li><a href="#CadClienteADM">> Cadastro de Cliente / Fornecedor</a></li>
-          <li><a href="#CadServicosADM">> Cadastro de Serviços</a></li>
-          <li><a href="#RPSADM">> Lançamento de RPS / NFSE</a></li>
-          <li><a href="#ProcREINFADM" class="titulo-side-wrapper">> Menu Processos > REINF</a></li>
-          <li><a href="#ComProdRuralADM"> >> Comercialização da produção por Produtor Rural PJ/Agroindústria</a></li>
-          <li><a href="#CPRBADM"> >> Contribuição Previdenciária sobre Receita Bruta - CPRB</a></li>
-          <li><a href="#RecAssocDespADM"> >> Recursos Recebidos/Repassados por Associação Desportiva</a></li>  
-          <li><a href="#PreProcADM"> >> Pré-Processamento de Eventos R2010/R2020</a></li>
-          <li><a href="#EFDREINFADM"> >> Gerar Eventos - EFD REINF</a></li>
+      <!-- Collapsible REINF NO MASTER -->
+        <ul class = "collapsible" data-collapsible = "accordion">
+          <li>
+            <div class="collapsible-header"><a href="#ReinfADM"><p>REINF no Master ADM</p></a></div>
+            <div class="collapsible-body"><a href="#CadEmpresaADM">> Cadastro da Empresa</a></div>
+            <div class="collapsible-body"><a href="#CadProcADM">> Cadastro de Processos Administrativos/Judiciais</a></div>
+            <div class="collapsible-body"><a href="#CadClienteADM">> Cadastro de Cliente / Fornecedor</a></div>
+            <div class="collapsible-body"><a href="#CadServicosADM">> Cadastro de Serviços</a></div>
+            <div class="collapsible-body"><a href="#RPSADM">> Lançamento de RPS / NFSE</a></div>
+            <div class="collapsible-body"><a href="#ProcREINFADM" class="titulo-side-wrapper">> Menu Processos > REINF</a></div>
+            <div class="collapsible-body"><a href="#ComProdRuralADM"> >> Comercialização da produção por Produtor Rural PJ/Agroindústria</a></div>
+            <div class="collapsible-body"><a href="#CPRBADM"> >> Contribuição Previdenciária sobre Receita Bruta - CPRB</a></div>
+            <div class="collapsible-body"><a href="#RecAssocDespADM"> >> Recursos Recebidos/Repassados por Associação Desportiva</a></div>  
+            <div class="collapsible-body"><a href="#PreProcADM"> >> Pré-Processamento de Eventos R2010/R2020</a></div>
+            <div class="collapsible-body"><a href="#EFDREINFADM"> >> Gerar Eventos - EFD REINF</a></div>
+          </li>
         </ul>
+      <!-- Collapsible REINF NO MASTER -->
+        <hr>
+      <!-- Collapsible REINF NO MASTERCONNECT -->        
+
+      <!-- Collapsible REINF NO MASTERCONNECT -->
       </div>
 
+<!-- Fim side wrapper -->
+
       <div id="main-wrapper" class="col s8 push-s2">
-        <div class="container">
+        <div id="container-registros" class="container">
           
           <h5 id="Contrib">Contribuintes obrigados a adotar a EFD-Reinf</h5>
           <p>Estão obrigados a prestar informações por meio da EFD-Reinf os seguintes contribuintes: <br><br>
@@ -130,7 +170,7 @@
           </p>
           <hr>
 
-          <h5>Registros</h5>
+          <h5>Eventos</h5>
 
           <h6 id="R-1000">R-1000 – Informações do Contribuinte</h6>
           <b>Conceito do Evento:</b>
@@ -238,6 +278,9 @@
               periódicos (R-2010 a R-2070). 
               </p>
           <hr>
+        </div>
+
+        <div id="container-ng" class="container">
           <h5 id='ReinfNG'>REINF no NG ERP</h5>
           <p>O ERP NG dispõe dos parâmetros necessários para a geração e envio dos arquivos pertinentes ao REINF.<br>A seguir, algumas orientações sobre como parametrizar o sistema:</p>
           
@@ -402,9 +445,10 @@
               </div>
             </div>
           </div>
-
           <hr>
+        </div>
 
+        <div id="container-adm" class="container">
           <h5 id='ReinfADM'>REINF na linha Master ADM</h5>
           <p>O MasterGerencial e o MasterFaturamento também dispõe dos parâmetros necessários para a geração e envio dos arquivos pertinentes ao REINF.<br>
             A seguir, algumas orientações sobre como parametrizar o sistema:
@@ -415,12 +459,14 @@
             <div class="col s12">
               <div class="card">
                 <div class="card-image">
-                  <img src="img/adm/mock.JPG">
-                </div>
-                <div class="card-content">
-                  <p>
-                    ........
-                  </p>
+                  <div class="container">         
+                    <img class="responsive-img" src="img/adm/cadEmpresa.JPG">
+                  </div>
+                  <div class="card-content">
+                    <p>
+                      ........
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -431,7 +477,7 @@
             <div class="col s12">
               <div class="card">
                 <div class="card-image">
-                  <img src="img/adm/mock.JPG">
+                    <img class="responsive-img" src="img/adm/procAdmJudic.JPG">
                 </div>
                 <div class="card-content">
                   <p>
@@ -447,7 +493,9 @@
             <div class="col s12">
               <div class="card">
                 <div class="card-image">
-                  <img src="img/adm/mock.JPG">
+                  <div class="container">
+                    <img src="img/adm/cadCliFor.JPG">
+                  </div>
                 </div>
                 <div class="card-content">
                   <p>
@@ -463,7 +511,7 @@
             <div class="col s12">
               <div class="card">
                 <div class="card-image">
-                  <img src="img/adm/mock.JPG">
+                  <img src="img/adm/cadServ.JPG">
                 </div>
                 <div class="card-content">
                   <p>
@@ -482,9 +530,7 @@
                   <img src="img/adm/mock.JPG">
                 </div>
                 <div class="card-content">
-                  <p>
-                    ........
-                  </p>
+                  ...................
                 </div>
               </div>
             </div>
@@ -497,7 +543,7 @@
             <div class="col s12">
               <div class="card">
                 <div class="card-image">
-                  <img src="img/adm/mock.JPG">
+                  <img src="img/adm/comProdRural.JPG">
                 </div>
                 <div class="card-content">
                   <p>
@@ -513,7 +559,7 @@
             <div class="col s12">
               <div class="card">
                 <div class="card-image">
-                  <img src="img/adm/mock.JPG">
+                  <img src="img/adm/CPRB.JPG">
                 </div>
                 <div class="card-content">
                   <p>
@@ -529,7 +575,7 @@
             <div class="col s12">
               <div class="card">
                 <div class="card-image">
-                  <img src="img/adm/mock.JPG">
+                  <img src="img/adm/recRecbtoAssocDesp.JPG">
                 </div>
                 <div class="card-content">
                   <p>
@@ -545,7 +591,9 @@
             <div class="col s12">
               <div class="card">
                 <div class="card-image">
-                  <img src="img/adm/mock.JPG">
+                  <div class="container">
+                    <img src="img/adm/preProc20102020.JPG">
+                  </div>
                 </div>
                 <div class="card-content">
                   <p>
@@ -561,7 +609,9 @@
             <div class="col s12">
               <div class="card">
                 <div class="card-image">
-                  <img src="img/adm/mock.JPG">
+                  <div class="container">
+                    <img src="img/adm/geraEventos.JPG">
+                  </div>
                 </div>
                 <div class="card-content">
                   <p>
@@ -582,7 +632,6 @@
 
   </footer>
 
-  <script src="sources/js/materialize.js"></script>
-  <script src="sources/js/script.js"></script>
+  <script type = "text/javascript" src="js/script.js"></script>
 </body>
 </html>
